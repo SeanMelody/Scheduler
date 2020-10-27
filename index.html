@@ -10,6 +10,8 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/style.css" />
+  <!-- Favicon Link -->
+  <link rel="icon" type="image/png" href="./assets/Favicon.png" />
   <title>Work Day Scheduler</title>
 </head>
 
@@ -26,17 +28,26 @@
   <div class="container hours">
     <div class="row">
       <div class="col-md-1 border border-dark border-left-0">9am</div>
-      <div class="col-md-10 border border-dark" id="nine"></div>
+      <div class="col-md-10 border border-dark nine-color" id="nine">
+        <input id="inputText" meeting="text">
+        </input>
+      </div>
       <div class="col-md-1 bg-info border-dark rounded-right saveBtn">&#9834</div>
     </div>
     <div class="row ten">
       <div class="col-md-1 border border-dark border-left-0">10am</div>
-      <div class="col-md-10 border border-dark" id="ten"></div>
-      <div class="col-md-1 bg-info border-dark rounded-right"></div>
+      <div class="col-md-10 border border-dark" id="ten">
+        <input class="ten-test">
+        </input>
+      </div>
+      <div class="col-md-1 bg-info border-dark rounded-right"><button class="save">Save</button></div>
     </div>
     <div class="row eleven">
       <div class="col-md-1 border border-dark border-left-0">11am</div>
-      <div class="col-md-10 border border-dark" id="eleven"></div>
+      <div class="col-md-10 border border-dark" id="eleven">
+        <input class="eleven-test">
+        </input>
+      </div>
       <div class="col-md-1 bg-info border-dark rounded-right"></div>
     </div>
     <div class="row twelve">
@@ -82,6 +93,11 @@
     <div class="row eight">
       <div class="col-md-1 border border-dark border-left-0">8pm</div>
       <div class="col-md-10 border border-dark" id="eight"></div>
+      <div class="col-md-1 bg-info border-dark rounded-right"></div>
+    </div>
+    <div class="row nine-two">
+      <div class="col-md-1 border border-dark border-left-0">9pm</div>
+      <div class="col-md-10 border border-dark" id="nine-two"></div>
       <div class="col-md-1 bg-info border-dark rounded-right"></div>
     </div>
 
