@@ -33,6 +33,7 @@ sinceNine.textContent = "9am was " + startAtNine
 
 
 // Variables for Each Hour on the Calendar
+var nine = document.querySelector("#nine");
 var ten = document.querySelector("#ten");
 var eleven = document.querySelector("#eleven");
 var noon = document.querySelector("#noon");
@@ -71,6 +72,7 @@ for (let i = 0; i < hourColors.length; i++) {
     if (hourColorsSelector.isBefore(now)) {
         // hourColorSelector.style.backgroundColor = "yellow";
         console.log("before now")
+        // console.log(hourColors[i])
         // Else if Statement to pick current hour?
         // } else if (hourColorsSelector.isSame(now)) {
         //     console.log("now")
@@ -189,13 +191,202 @@ $(".save-noon").click(function () {
 })
 
 // TEST THREE
-var noonInput = document.querySelector(".noon-input").value
-localStorage.setItem("noon", noonInput);
+$(".save-three").click(function () {
+    $(".demo-three").css("background-color", "green");
 
 
-var noonInput = localStorage.getItem("noon");
-$("div.demo-three").text(noonInput)
+})
+// var noonInput = document.querySelector(".noon-input").value
+// localStorage.setItem("noon", noonInput);
 
+
+// var noonInput = localStorage.getItem("noon");
+// $("div.demo-three").text(noonInput)
+
+
+// OBJECT TEST
+
+// VARIABLES FOR THE COLOR CHANGING DIV CLASSES
+var nineColor = document.querySelector(".nine-color")
+var tenColor = document.querySelector(".ten-color")
+var elevenColor = document.querySelector(".eleven-color")
+var noonColor = document.querySelector(".noon-color")
+var oneColor = document.querySelector(".one-color")
+var twoColor = document.querySelector(".two-color")
+var threeColor = document.querySelector(".three-color")
+var fourColor = document.querySelector(".four-color")
+var fiveColor = document.querySelector(".five-color")
+var sixColor = document.querySelector(".six-color")
+var sevenColor = document.querySelector(".seven-color")
+var eightColor = document.querySelector(".eight-color")
+var nineTwoColor = document.querySelector(".nine-two-color")
+
+// DOCUMENT TO ITERATE THROUGH FOR COLOR CHANGING DIVS
+var hourTest = [
+    {
+        time: nine,
+        color: nineColor,
+    },
+    {
+        time: ten,
+        color: tenColor,
+    },
+    {
+        time: eleven,
+        color: elevenColor,
+    },
+    {
+        time: noon,
+        color: noonColor,
+    },
+    {
+        time: one,
+        color: oneColor,
+    },
+    {
+        time: two,
+        color: twoColor,
+    },
+    {
+        time: three,
+        color: threeColor,
+    },
+    {
+        time: ten,
+        color: tenColor,
+    },
+    {
+        time: four,
+        color: fourColor,
+    },
+    {
+        time: ten,
+        color: tenColor,
+    },
+    {
+        time: five,
+        color: fiveColor,
+    },
+    {
+        time: six,
+        color: sixColor,
+    },
+    {
+        time: seven,
+        color: sevenColor,
+    },
+    {
+        time: eight,
+        color: eightColor,
+    },
+    {
+        time: nineTwo,
+        color: nineTwoColor,
+    },
+];
+// time = ""
+// color = ""
+// $.each(hourTest, function (time, color) {
+//     console.log(time, color);
+//     if (time.isBefore(now))
+
+// });
+var nowTest = moment().hours()
+console.log(nowTest)
+
+if (nine.isBefore(now)) {
+    nineColor.style.backgroundColor = "grey"
+} else {
+    nineColor.style.backgroundColor = "green"
+}
+if (ten.isBefore(now)) {
+    tenColor.style.backgroundColor = "grey"
+} else {
+    tenColor.style.backgroundColor = "green"
+}
+if (eleven.isBefore(now)) {
+    elevenColor.style.backgroundColor = "grey"
+} else {
+    elevenColor.style.backgroundColor = "green"
+}
+if (noon.isBefore(now)) {
+    noonColor.style.backgroundColor = "grey"
+} else {
+    noonColor.style.backgroundColor = "green"
+}
+if (one.isBefore(now)) {
+    oneColor.style.backgroundColor = "grey"
+} else {
+    oneColor.style.backgroundColor = "green"
+}
+if (two.isBefore(now)) {
+    twoColor.style.backgroundColor = "grey"
+} else {
+    twoColor.style.backgroundColor = "green"
+}
+if (three.hour() === (moment().hours())) {
+    threeColor.style.backgroundColor = "red"
+} else if (three.isBefore(now)) {
+    threeColor.style.backgroundColor = "grey"
+} else {
+    threeColor.style.backgroundColor = "green"
+}
+if (four.hour() === (moment().hours())) {
+    fourColor.style.backgroundColor = "red"
+} else if (four.isBefore(now)) {
+    fourColor.style.backgroundColor = "grey"
+} else {
+    fourColor.style.backgroundColor = "green"
+}
+if (five.isBefore(now)) {
+    fiveColor.style.backgroundColor = "grey"
+} else {
+    fiveColor.style.backgroundColor = "green"
+}
+if (six.isBefore(now)) {
+    sixColor.style.backgroundColor = "grey"
+} else {
+    sixColor.style.backgroundColor = "green"
+}
+if (seven.isBefore(now)) {
+    sevenColor.style.backgroundColor = "grey"
+} else {
+    sevenColor.style.backgroundColor = "green"
+}
+if (eight.isBefore(now)) {
+    eightColor.style.backgroundColor = "grey"
+} else {
+    eightColor.style.backgroundColor = "green"
+}
+if (nineTwo.isBefore(now)) {
+    nineTwoColor.style.backgroundColor = "grey"
+} else {
+    nineTwoColor.style.backgroundColor = "green"
+}
+
+
+// currentQuestion.choices.forEach(function (choice, i) {
+//     // Make a button for each choice
+//     var choicesButtons = document.createElement("button");
+//     // Set the attribute of each choice
+//     choicesButtons.setAttribute("class", "choice");
+// });
+
+
+// if (hourColorsSelector.isBefore(now)) {
+// hourColorSelector.style.backgroundColor = "yellow";
+// console.log("before now")
+// console.log(hourColors[i])
+// Else if Statement to pick current hour?
+// } else if (hourColorsSelector.isSame(now)) {
+//     console.log("now")
+//     } else {
+//         (hourColorsSelector.isAfter(now))
+//         // hourColorsSelector.style.backgroundColor = "green"
+//         console.log("after now")
+//     }
+// }
+// })
 
 
 
