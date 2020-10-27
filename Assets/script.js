@@ -63,6 +63,27 @@ eight = moment().hours(20).minutes(0).seconds(0).milliseconds(0);
 nineTwo = moment().hours(21).minutes(0).seconds(0).milliseconds(0);
 
 
+
+// IMPORTANT HOURS LOGGED BEFORE AND AFTER NOW!!!!
+var hourColors = [nine, ten, eleven, noon, one, two, three, four, five, six, seven, eight, nineTwo]
+for (let i = 0; i < hourColors.length; i++) {
+    hourColorsSelector = hourColors[i];
+    if (hourColorsSelector.isBefore(now)) {
+        // hourColorSelector.style.backgroundColor = "yellow";
+        console.log("before now")
+        // Else if Statement to pick current hour?
+        // } else if (hourColorsSelector.isSame(now)) {
+        //     console.log("now")
+    } else {
+        (hourColorsSelector.isAfter(now))
+        // hourColorsSelector.style.backgroundColor = "green"
+        console.log("after now")
+    }
+}
+
+
+
+
 // Input text box for Nine
 var input = document.querySelector("#inputText");
 function returnKeyListener(event) {
@@ -91,19 +112,107 @@ var meeting = {
 // Onlick for Save Button
 var tenTest = document.querySelector(".ten-test");
 
-
-
-
 $(".save").click(function () {
-    $(".ten-test")
+    // $(".ten-test")
     $("#ten").css("backgroundColor", "yellow")
-    $(".ten-test").textContent = "meeting";
+
+    // $(".ten-test").value("meeting")
 
     // $(".ten-test").textContent=
     // tenTest = localStorage.setItem(timeMeeting, nameMeeting)
 
     console.log("save");
 });
+
+
+
+
+
+
+
+
+
+// I DON'T KNOW WHAT THE FUCK WILL WORK HERE
+// $(".eleven-test").keyup(function () {
+//     var value = $(this).val();
+//     $("p").text(value);
+// })
+//     .keyup();
+
+
+
+
+
+
+
+
+
+// var elevenInput = localStorage.getItem("eleven");
+// var elevenUgh = document.querySelector(".elevenUgh")
+// elevenUgh.textContent = elevenInput
+
+
+// ELEVEN SAVE BUTTON AND LOCAL STORAGE
+$(".save-eleven").click(function () {
+    var elevenInput = document.querySelector(".eleven-test").value
+    localStorage.setItem("eleven", elevenInput);
+
+
+    var elevenInput = localStorage.getItem("eleven");
+    var elevenUgh = document.querySelector(".elevenUgh")
+    elevenUgh.textContent = elevenInput
+
+
+});
+
+
+// TEST!
+
+// if (noon item ?) {
+
+// } else {
+
+
+
+$(".save-noon").click(function () {
+    var noonInput = document.querySelector(".noon-input").value
+    localStorage.setItem("noon", noonInput);
+
+
+    var noonInput = localStorage.getItem("noon");
+    var noonTest = document.querySelector(".noon-test")
+    noonTest.textContent = noonInput
+
+
+    //     });
+
+})
+
+// TEST THREE
+var noonInput = document.querySelector(".noon-input").value
+localStorage.setItem("noon", noonInput);
+
+
+var noonInput = localStorage.getItem("noon");
+$("div.demo-three").text(noonInput)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -180,21 +289,21 @@ console.log(one.hours());
 
 
 
-// IMPORTANT HOURS LOGGED BEFORE AND AFTER NOW!!!!
-var hourColors = [nine, ten, eleven, noon, one, two, three, four, five, six, seven, eight, nineTwo]
-for (let i = 0; i < hourColors.length; i++) {
-    hourColorsSelector = hourColors[i];
-    if (hourColorsSelector.isBefore(now)) {
-        nineColor.style.backgroundColor = "yellow";
-        console.log("before now")
-        // Else if Statement to pick current hour?
-        // } else if (hourColorsSelector.isSame(now)) {
-        //     console.log("now")
-    } else {
-        (hourColorsSelector.isAfter(now))
-        console.log("after now")
-    }
-}
+// // IMPORTANT HOURS LOGGED BEFORE AND AFTER NOW!!!!
+// var hourColors = [nine, ten, eleven, noon, one, two, three, four, five, six, seven, eight, nineTwo]
+// for (let i = 0; i < hourColors.length; i++) {
+//     hourColorsSelector = hourColors[i];
+//     if (hourColorsSelector.isBefore(now)) {
+//         nineColor.style.backgroundColor = "yellow";
+//         console.log("before now")
+//         // Else if Statement to pick current hour?
+//         // } else if (hourColorsSelector.isSame(now)) {
+//         //     console.log("now")
+//     } else {
+//         (hourColorsSelector.isAfter(now))
+//         console.log("after now")
+//     }
+// }
 
 
 
