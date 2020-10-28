@@ -75,7 +75,7 @@ for (let i = 0; i < hourColors.length; i++) {
 
 
 // VARIABLES FOR THE COLOR CHANGING DIV CLASSES
-var nineColor = document.querySelector(".nine-color")
+// var nineColor = document.querySelector(".nine-color")
 var tenColor = document.querySelector(".ten-color")
 var elevenColor = document.querySelector(".eleven-color")
 var noonColor = document.querySelector(".noon-color")
@@ -92,100 +92,100 @@ var nineTwoColor = document.querySelector(".nine-two-color")
 
 
 
-// SETTING THE COLOR OF THE DIVS BASED ON TIME
+// SETTING THE COLOR OF THE DIVS BASED ON TIME (RED FOR CURRENT TIME, GREY FOR IN THE PAST, GREEN FOR THE FUTURE)
 
 if (nine.hour() === (moment().hours())) {
-    nineColor.style.backgroundColor = "#ff6961"
+    $(".nine-color").css("background-color", "#ff6961");
 } else if (nine.isBefore(now)) {
-    nineColor.style.backgroundColor = "#d3d3d3"
+    $(".nine-color").css("background-color", "#d3d3d3");
 } else {
-    nineColor.style.backgroundColor = "#77dd77"
+    $(".nine-color").css("background-color", "#77dd77");
 }
 if (ten.hour() === (moment().hours())) {
-    tenColor.style.backgroundColor = "#ff6961"
+    $(".ten-color").css("background-color", "#ff6961");
 } else if (ten.isBefore(now)) {
-    tenColor.style.backgroundColor = "#d3d3d3"
+    $(".ten-color").css("background-color", "#d3d3d3");
 } else {
-    tenColor.style.backgroundColor = "#77dd77"
+    $(".ten-color").css("background-color", "#77dd77");
 }
 if (eleven.hour() === (moment().hours())) {
-    elevenColor.style.backgroundColor = "#ff6961"
+    $(".eleven-color").css("background-color", "#ff6961");
 } else if (eleven.isBefore(now)) {
-    elevenColor.style.backgroundColor = "#d3d3d3"
+    $(".eleven-color").css("background-color", "#d3d3d3");
 } else {
-    elevenColor.style.backgroundColor = "#77dd77"
+    $(".eleven-color").css("background-color", "#77dd77");
 }
 if (noon.hour() === (moment().hours())) {
-    noonColor.style.backgroundColor = "#ff6961"
+    $(".noon-color").css("background-color", "#ff6961");
 } else if (noon.isBefore(now)) {
-    noonColor.style.backgroundColor = "#d3d3d3"
+    $(".noon-color").css("background-color", "#d3d3d3");
 } else {
-    noonColor.style.backgroundColor = "#77dd77"
+    $(".noon-color").css("background-color", "#77dd77");
 }
 if (one.hour() === (moment().hours())) {
-    oneColor.style.backgroundColor = "#ff6961"
+    $(".one-color").css("background-color", "#ff6961");
 } else if (one.isBefore(now)) {
-    oneColor.style.backgroundColor = "#d3d3d3"
+    $(".one-color").css("background-color", "#d3d3d3");
 } else {
-    oneColor.style.backgroundColor = "#77dd77"
+    $(".one-color").css("background-color", "#77dd77");
 }
 if (two.hour() === (moment().hours())) {
-    twoColor.style.backgroundColor = "#ff6961"
+    $(".two-color").css("background-color", "#ff6961");
 } else if (two.isBefore(now)) {
-    twoColor.style.backgroundColor = "#d3d3d3"
+    $(".two-color").css("background-color", "#d3d3d3");
 } else {
-    twoColor.style.backgroundColor = "#77dd77"
+    $(".two-color").css("background-color", "#77dd77");
 }
 if (three.hour() === (moment().hours())) {
-    threeColor.style.backgroundColor = "#ff6961"
+    $(".three-color").css("background-color", "#ff6961");
 } else if (three.isBefore(now)) {
-    threeColor.style.backgroundColor = "#d3d3d3"
+    $(".three-color").css("background-color", "#d3d3d3");
 } else {
-    threeColor.style.backgroundColor = "#77dd77"
+    $(".three-color").css("background-color", "#77dd77");
 }
 if (four.hour() === (moment().hours())) {
-    fourColor.style.backgroundColor = "#ff6961"
+    $(".four-color").css("background-color", "#ff6961");
 } else if (four.isBefore(now)) {
-    fourColor.style.backgroundColor = "#d3d3d3"
+    f$(".four-color").css("background-color", "#d3d3d3");
 } else {
-    fourColor.style.backgroundColor = "#77dd77"
+    $(".four-color").css("background-color", "#77dd77");
 }
 if (five.hour() === (moment().hours())) {
-    fiveColor.style.backgroundColor = "#ff6961"
+    $(".five-color").css("background-color", "#ff6961");
 } else if (five.isBefore(now)) {
-    fiveColor.style.backgroundColor = "#d3d3d3"
+    $(".five-color").css("background-color", "#d3d3d3");
 } else {
-    fiveColor.style.backgroundColor = "#77dd77"
+    $(".five-color").css("background-color", "#77dd77");
 }
 if (six.hour() === (moment().hours())) {
-    sixColor.style.backgroundColor = "#ff6961"
+    $(".six-color").css("background-color", "#ff6961");
 } else if (six.isBefore(now)) {
-    sixColor.style.backgroundColor = "#d3d3d3"
+    $(".six-color").css("background-color", "#d3d3d3");
 } else {
-    sixColor.style.backgroundColor = "#77dd77"
+    $(".six-color").css("background-color", "#77dd77");
 }
 if (seven.hour() === (moment().hours())) {
-    sevenColor.style.backgroundColor = "#ff6961"
+    $(".seven-color").css("background-color", "#ff6961");
 } else if (seven.isBefore(now)) {
-    sevenColor.style.backgroundColor = "#d3d3d3"
+    $(".seven-color").css("background-color", "#d3d3d3");
 } else {
-    sevenColor.style.backgroundColor = "#77dd77"
+    $(".seven-color").css("background-color", "#77dd77");
 }
 if (eight.hour() === (moment().hours())) {
-    eightColor.style.backgroundColor = "#ff6961"
+    $(".eight-color").css("background-color", "#ff6961");
     console.log("current hour")
 } else if (eight.isBefore(now)) {
-    eightColor.style.backgroundColor = "#d3d3d3"
+    $(".eight-color").css("background-color", "#d3d3d3");
 } else {
-    eightColor.style.backgroundColor = "#77dd77"
+    $(".eight-color").css("background-color", "#77dd77");
 }
 if (nineTwo.hour() === (moment().hours())) {
-    nineTwoColor.style.backgroundColor = "#ff6961"
+    $(".nine-two-color").css("background-color", "#ff6961");
     console.log("current hour")
 } else if (nineTwo.isBefore(now)) {
-    nineTwoColor.style.backgroundColor = "#d3d3d3"
+    $(".nine-two-color").css("background-color", "#d3d3d3");
 } else {
-    nineTwoColor.style.backgroundColor = "#77dd77"
+    $(".nine-two-color").css("background-color", "#77dd77");
 }
 
 
