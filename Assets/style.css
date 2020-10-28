@@ -51,21 +51,25 @@ h6 {
   background-color: #d3d3d3;
   padding-top: 10px;
   size: 100px;
-  color: white;
+  color: black;
+  border: 1px solid #000000;
+  
 }
 
 .present {
   background-color: #ff6961;
   padding-top: 10px;
   size: 100px;
-  color: white;
+  color: black;
+  border: 1px solid #000000;
 }
 
 .future {
   background-color: #77dd77;
   padding-top: 10px;
   size: 100px;
-  color: white;
+  color: black;
+  border: 1px solid #000000;
 }
 
 .saveBtn {

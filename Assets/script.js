@@ -408,7 +408,7 @@ document.querySelector(".nine-two-text").value = nineTwoInput
 
 $(".nine-two-save").click(function () {
     var nineTwoInput = document.querySelector(".nine-two-text").value
-    localStorage.setItem("nine-two", nineTwo);
+    localStorage.setItem("nine-two", nineTwoInput);
 
     var nineTwoInput = localStorage.getItem("nine-two");
     var nineTwoText = document.querySelector(".nine-two-text")
