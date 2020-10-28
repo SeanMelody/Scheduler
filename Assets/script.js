@@ -6,7 +6,7 @@ currentDay.textContent = "Today is: " + (moment().format('MMMM Do YYYY'));
 var sinceNine = document.querySelector("#sincenine")
 
 
-// var nine = document.querySelector("#nine").style.backgroundColor = "red";
+
 
 var test = moment().format("MMMM Do YYYY");
 console.log(test);
@@ -19,16 +19,6 @@ var startAtNine = moment().hours(9).minutes(0).seconds(0).milliseconds(0).fromNo
 console.log(startAtNine);
 
 sinceNine.textContent = "9am was " + startAtNine
-
-
-// var userInput = $(nine).text();
-// userInput.document.textContent.val();
-
-// nine.styleColor = "red";
-
-// Set the background Colors
-// var ten = document.querySelector("#ten").style.backgroundColor = "grey";
-// var eleven = document.querySelector("#eleven").style.backgroundColor = "green";
 
 
 
@@ -84,103 +74,6 @@ for (let i = 0; i < hourColors.length; i++) {
 }
 
 
-
-
-// Input text box for Nine
-// var input = document.querySelector("#inputText");
-// function returnKeyListener(event) {
-//     if (event.keyCode == 13) {
-//         // console log input when enter is pressed
-//         console.log(input.value);
-//         var newEvent = input.value
-//         console.log(newEvent)
-//         localStorage.setItem('meeting', newEvent)
-//         localStorage.getItem('meeting', newEvent)
-//     }
-
-
-// }
-// input.addEventListener('keyup', returnKeyListener)
-// localStorage.setItem('meeting', newEvent)
-// localStorage.getItem('meeting', newEvent)
-
-
-
-var meeting = {
-    timeMeeting: "",
-    nameMeeting: "",
-}
-
-// Onlick for Save Button
-var tenTest = document.querySelector(".ten-test");
-
-$(".save").click(function () {
-    // $(".ten-test")
-    $("#ten").css("backgroundColor", "yellow")
-
-    // $(".ten-test").value("meeting")
-
-    // $(".ten-test").textContent=
-    // tenTest = localStorage.setItem(timeMeeting, nameMeeting)
-
-    console.log("save");
-});
-
-
-
-
-
-
-
-
-
-// I DON'T KNOW WHAT THE FUCK WILL WORK HERE
-// $(".eleven-test").keyup(function () {
-//     var value = $(this).val();
-//     $("p").text(value);
-// })
-//     .keyup();
-
-
-
-
-
-
-
-// for (let i = 0; i < array.length; i++) {
-//     const element = array[i];
-
-// }
-// var elevenInput = localStorage.getItem("eleven");
-// document.querySelector(".eleven-test").value = elevenInput
-// document.querySelector(".eleven-test").style.backgroundColor = "grey"
-
-
-// var elevenUgh = document.querySelector(".elevenUgh")
-// elevenUgh.textContent = elevenInput
-
-
-// ELEVEN SAVE BUTTON AND LOCAL STORAGE
-
-var elevenInput = localStorage.getItem("eleven");
-document.querySelector(".eleven-test").value = elevenInput
-
-
-$(".save-eleven").click(function () {
-    var elevenInput = document.querySelector(".eleven-test").value
-    localStorage.setItem("eleven", elevenInput);
-
-    var elevenInput = localStorage.getItem("eleven");
-    var elevenUgh = document.querySelector(".eleven-test")
-
-    elevenUgh.textContent = elevenInput
-
-});
-
-
-
-
-
 // VARIABLES FOR THE COLOR CHANGING DIV CLASSES
 var nineColor = document.querySelector(".nine-color")
 var tenColor = document.querySelector(".ten-color")
@@ -196,78 +89,10 @@ var sevenColor = document.querySelector(".seven-color")
 var eightColor = document.querySelector(".eight-color")
 var nineTwoColor = document.querySelector(".nine-two-color")
 
-// DOCUMENT TO ITERATE THROUGH FOR COLOR CHANGING DIVS
-var hourTest = [
-    {
-        time: nine,
-        color: nineColor,
-    },
-    {
-        time: ten,
-        color: tenColor,
-    },
-    {
-        time: eleven,
-        color: elevenColor,
-    },
-    {
-        time: noon,
-        color: noonColor,
-    },
-    {
-        time: one,
-        color: oneColor,
-    },
-    {
-        time: two,
-        color: twoColor,
-    },
-    {
-        time: three,
-        color: threeColor,
-    },
-    {
-        time: ten,
-        color: tenColor,
-    },
-    {
-        time: four,
-        color: fourColor,
-    },
-    {
-        time: ten,
-        color: tenColor,
-    },
-    {
-        time: five,
-        color: fiveColor,
-    },
-    {
-        time: six,
-        color: sixColor,
-    },
-    {
-        time: seven,
-        color: sevenColor,
-    },
-    {
-        time: eight,
-        color: eightColor,
-    },
-    {
-        time: nineTwo,
-        color: nineTwoColor,
-    },
-];
-// time = ""
-// color = ""
-// $.each(hourTest, function (time, color) {
-//     console.log(time, color);
-//     if (time.isBefore(now))
 
-// });
-var nowTest = moment().hours()
-console.log(nowTest)
+
+
+// SETTING THE COLOR OF THE DIVS BASED ON TIME
 
 if (nine.hour() === (moment().hours())) {
     nineColor.style.backgroundColor = "red"
@@ -364,28 +189,305 @@ if (nineTwo.hour() === (moment().hours())) {
 }
 
 
-// currentQuestion.choices.forEach(function (choice, i) {
-//     // Make a button for each choice
-//     var choicesButtons = document.createElement("button");
-//     // Set the attribute of each choice
-//     choicesButtons.setAttribute("class", "choice");
-// });
+
+// SETTING THE SAVE BUTTONS TO THE LOCAL STORAGE
 
 
-// if (hourColorsSelector.isBefore(now)) {
-// hourColorSelector.style.backgroundColor = "yellow";
-// console.log("before now")
-// console.log(hourColors[i])
-// Else if Statement to pick current hour?
-// } else if (hourColorsSelector.isSame(now)) {
-//     console.log("now")
-//     } else {
-//         (hourColorsSelector.isAfter(now))
-//         // hourColorsSelector.style.backgroundColor = "green"
-//         console.log("after now")
-//     }
-// }
-// })
+// NINE SAVE BUTTON AND LOCAL STORAGE
+
+var nineInput = localStorage.getItem("nine");
+document.querySelector(".nine-text").value = nineInput
+
+
+$(".nine-save").click(function () {
+    var nineInput = document.querySelector(".nine-text").value
+    localStorage.setItem("nine", nineInput);
+
+    var nineInput = localStorage.getItem("nine");
+    var nineText = document.querySelector(".nine-text")
+
+    nineText.textContent = nineInput
+
+});
+
+
+// TEN SAVE BUTTON AND LOCAL STORAGE
+
+var tenInput = localStorage.getItem("ten");
+document.querySelector(".ten-text").value = tenInput
+
+
+$(".ten-save").click(function () {
+    var tenInput = document.querySelector(".ten-text").value
+    localStorage.setItem("ten", tenInput);
+
+    var tenInput = localStorage.getItem("ten");
+    var tenText = document.querySelector(".ten-text")
+
+    tenText.textContent = tenInput
+
+});
+
+
+// ELEVEN SAVE BUTTON AND LOCAL STORAGE
+
+var elevenInput = localStorage.getItem("eleven");
+document.querySelector(".eleven-text").value = elevenInput
+
+
+$(".eleven-save").click(function () {
+    var elevenInput = document.querySelector(".eleven-text").value
+    localStorage.setItem("eleven", elevenInput);
+
+    var elevenInput = localStorage.getItem("eleven");
+    var elevenText = document.querySelector(".eleven-text")
+
+    elevenText.textContent = elevenInput
+
+});
+
+
+// NOON SAVE BUTTON AND LOCAL STORAGE
+
+var noonInput = localStorage.getItem("noon");
+document.querySelector(".noon-text").value = noonInput
+
+
+$(".noon-save").click(function () {
+    var noonInput = document.querySelector(".noon-text").value
+    localStorage.setItem("noon", noonInput);
+
+    var noonInput = localStorage.getItem("noon");
+    var noonText = document.querySelector(".noon-text")
+
+    noonText.textContent = noonInput
+
+});
+
+// ONE SAVE BUTTON AND LOCAL STORAGE
+
+var oneInput = localStorage.getItem("one");
+document.querySelector(".one-text").value = oneInput
+
+
+$(".one-save").click(function () {
+    var oneInput = document.querySelector(".one-text").value
+    localStorage.setItem("one", oneInput);
+
+    var oneInput = localStorage.getItem("one");
+    var oneText = document.querySelector(".one-text")
+
+    oneText.textContent = oneInput
+
+});
+
+// TWO SAVE BUTTON AND LOCAL STORAGE
+
+var twoInput = localStorage.getItem("two");
+document.querySelector(".two-text").value = twoInput
+
+
+$(".two-save").click(function () {
+    var twoInput = document.querySelector(".two-text").value
+    localStorage.setItem("two", twoInput);
+
+    var twoInput = localStorage.getItem("two");
+    var twoText = document.querySelector(".two-text")
+
+    twoText.textContent = twoInput
+
+});
+
+// THREE SAVE BUTTON AND LOCAL STORAGE
+
+var threeInput = localStorage.getItem("three");
+document.querySelector(".three-text").value = threeInput
+
+
+$(".three-save").click(function () {
+    var threeInput = document.querySelector(".three-text").value
+    localStorage.setItem("three", threeInput);
+
+    var threeInput = localStorage.getItem("three");
+    var threeText = document.querySelector(".three-text")
+
+    threeText.textContent = threeInput
+
+});
+
+// FOUR SAVE BUTTON AND LOCAL STORAGE
+
+var fourInput = localStorage.getItem("four");
+document.querySelector(".four-text").value = fourInput
+
+
+$(".four-save").click(function () {
+    var fourInput = document.querySelector(".four-text").value
+    localStorage.setItem("four", fourInput);
+
+    var fourInput = localStorage.getItem("four");
+    var fourText = document.querySelector(".four-text")
+
+    fourText.textContent = fourInput
+
+});
+
+// FIVE SAVE BUTTON AND LOCAL STORAGE
+
+var fiveInput = localStorage.getItem("five");
+document.querySelector(".five-text").value = fiveInput
+
+
+$(".five-save").click(function () {
+    var fiveInput = document.querySelector(".five-text").value
+    localStorage.setItem("five", fiveInput);
+
+    var fiveInput = localStorage.getItem("five");
+    var fiveText = document.querySelector(".five-text")
+
+    fiveText.textContent = fiveInput
+
+});
+
+// SIX SAVE BUTTON AND LOCAL STORAGE
+
+var sixInput = localStorage.getItem("six");
+document.querySelector(".six-text").value = sixInput
+
+
+$(".six-save").click(function () {
+    var sixInput = document.querySelector(".six-text").value
+    localStorage.setItem("six", sixInput);
+
+    var sixInput = localStorage.getItem("six");
+    var sixText = document.querySelector(".six-text")
+
+    sixText.textContent = sixInput
+
+});
+
+// SEVEN SAVE BUTTON AND LOCAL STORAGE
+
+var sevenInput = localStorage.getItem("seven");
+document.querySelector(".seven-text").value = sevenInput
+
+
+$(".seven-save").click(function () {
+    var sevenInput = document.querySelector(".seven-text").value
+    localStorage.setItem("seven", sevenInput);
+
+    var sevenInput = localStorage.getItem("seven");
+    var sevenText = document.querySelector(".seven-text")
+
+    sevenText.textContent = sevenInput
+
+});
+
+// EIGHT SAVE BUTTON AND LOCAL STORAGE
+
+var eightInput = localStorage.getItem("eight");
+document.querySelector(".eight-text").value = eightInput
+
+
+$(".eight-save").click(function () {
+    var eightInput = document.querySelector(".eight-text").value
+    localStorage.setItem("eight", eightInput);
+
+    var eightInput = localStorage.getItem("eight");
+    var eightText = document.querySelector(".eight-text")
+
+    eightText.textContent = eightInput
+
+});
+
+// NINE SAVE BUTTON AND LOCAL STORAGE
+
+var nineTwoInput = localStorage.getItem("nine-two");
+document.querySelector(".nine-two-text").value = nineTwoInput
+
+
+$(".nine-two-save").click(function () {
+    var nineTwoInput = document.querySelector(".nine-two-text").value
+    localStorage.setItem("nine-two", nineTwo);
+
+    var nineTwoInput = localStorage.getItem("nine-two");
+    var nineTwoText = document.querySelector(".nine-two-text")
+
+    nineTwoText.textContent = nineTwoInput
+
+});
+
+
+
+
+
+
+
+// FUNCTION TESTS!
+
+
+// var hourTest = [
+//     {
+//         time: nine,
+//         color: nineColor,
+//     },
+//     {
+//         time: ten,
+//         color: tenColor,
+//     },
+//     {
+//         time: eleven,
+//         color: elevenColor,
+//     },
+//     {
+//         time: noon,
+//         color: noonColor,
+//     },
+//     {
+//         time: one,
+//         color: oneColor,
+//     },
+//     {
+//         time: two,
+//         color: twoColor,
+//     },
+//     {
+//         time: three,
+//         color: threeColor,
+//     },
+//     {
+//         time: ten,
+//         color: tenColor,
+//     },
+//     {
+//         time: four,
+//         color: fourColor,
+//     },
+//     {
+//         time: ten,
+//         color: tenColor,
+//     },
+//     {
+//         time: five,
+//         color: fiveColor,
+//     },
+//     {
+//         time: six,
+//         color: sixColor,
+//     },
+//     {
+//         time: seven,
+//         color: sevenColor,
+//     },
+//     {
+//         time: eight,
+//         color: eightColor,
+//     },
+//     {
+//         time: nineTwo,
+//         color: nineTwoColor,
+//     },
+// ];
 
 
 
@@ -403,18 +505,8 @@ if (nineTwo.hour() === (moment().hours())) {
 
 
 
+// TIME CHECKS
 
-
-
-// console.log(five)
-
-// console.log((nineTwo))
-
-
-// console.log(moment().toNow());
-
-
-// Variable Now = right now
 var now = moment();
 
 
@@ -427,122 +519,22 @@ var endTime = moment().hours();
 console.log(beginningTime.isBefore(endTime)); // true
 
 
-var nineColor = document.querySelector(".nine-color")
-// nineColor.style.backgroundColor = "grey"
-// moment().calendar({
-//     sameDay: function (now) {
-//         if (moment().hours(09).isBefore(now)) {
-//             nineColor.style.backgroundColor = "red";
-//             console.log("Later Today");
-//         } else {
-//             nineColor.style.backgroundColor = "green";
-//             console.log("Earlier Today");
-//         }
-//     }
-// })
-
-// Checking the time against now
-// console.log(nine)
-// console.log(now)
 console.log(one.isBefore(now))
 
-// IMPORTANT Array of all the hours in the calendar
-// var hourColors = [nine, ten, eleven, noon, one, two, three, four, five, six, seven, eight, nineTwo]
-// for (let i = 0; i < hourColors.length; i++) {
-//     hourColorsSelector = hourColors[i];
-//     if (hourColorsSelector.isBefore(now)) {
-//         nineColor.style.backgroundColor = "yellow";
-//         console.log("before now")
-//         // Else if Statement to pick current hour?
-//         // } else if (hourColorsSelector.isSame(now)) {
-//         //     console.log("now")
-//     } else {
-//         (hourColorsSelector.isAfter(now))
-//         console.log("after now")
-//     }
-// }
 
 var nowHour = moment().hours()
 console.log(nowHour)
-// IMPORTANT !!!MAKES VAR ONE INTO NUMBER!!!!
-console.log(one.hours());
-
-// hourTime = [nine.hour(), ten.hour(), eleven.hour(), noon.hour(), one.hour(), two.hour(), three.hour(), four.hour(), five.hour(), six.hour(), seven.hour(), eight.hour(), nineTwo.hour()];
-// for (let i = 0; i < hourTime.length; i++) {
-//     var hourTimePick = hourTime[i];
-//     console.log(hourTimePick)
-// }
-// if (nowHour === one.hours()) {
-//     console.log("One O'Clock")
-//     nineColor.style.backgroundColor = "orange"
-// }
-
-
-
-// // IMPORTANT HOURS LOGGED BEFORE AND AFTER NOW!!!!
-// var hourColors = [nine, ten, eleven, noon, one, two, three, four, five, six, seven, eight, nineTwo]
-// for (let i = 0; i < hourColors.length; i++) {
-//     hourColorsSelector = hourColors[i];
-//     if (hourColorsSelector.isBefore(now)) {
-//         nineColor.style.backgroundColor = "yellow";
-//         console.log("before now")
-//         // Else if Statement to pick current hour?
-//         // } else if (hourColorsSelector.isSame(now)) {
-//         //     console.log("now")
-//     } else {
-//         (hourColorsSelector.isAfter(now))
-//         console.log("after now")
-//     }
-// }
 
 
 
 if (one.isBefore(now)) {
-    nineColor.textContent = "yellow";
+    // nineColor.textContent = "yellow";
     console.log("it is after 1pm")
 } else {
-    nineColor.textContent = "blue"
+    // nineColor.textContent = "blue"
     console.log("it is before 1pm")
 }
 
-// Array of all the hours in the calendar
-// var hourColors = [ten, eleven, noon, one, two, three, four, five, six, seven, eight, nineTwo]
-
-// console.log(hourColors)
-// moment().calendar({
-//     sameDay: function (now) {
-//         for (let i = 0; i < hourColors.length; i++) {
-//             var hourColorsSelector = hourColors[i];
-//             if (hourColorsSelector < now) {
-//                 hourColorsSelector.style.backgroundColor = "green";
-//             } else {
-//                 hourColorsSelector.style.backgroundColor = "grey";
-//             }
-//         }
-
-//     }
-// })
-
-
-// Variable nowtest = right now hours as a number
-// var nowTest = moment().hours()
-// console.log(nowTest)
-
-
-// eight = moment().hours(21).minutes(0).seconds(0).milliseconds(0);
-// console.log(eight);
-
-// Attempt at a test for color times?
-// var now = 8
-
-// for (let i = 0; i < hourColors.length; i++) {
-//     var hourColorsSelector = hourColors[i];
-//     if (hourColorsSelector >= now) {
-//         hourColorsSelector.style.backgroundColor = "green";
-//     } else {
-//         hourColorsSelector.style.backgroundColor = "grey";
-//     }
-// }
 
 
 // FOR LOOP TO PICK COLORS?
@@ -554,36 +546,6 @@ if (one.isBefore(now)) {
 
 // }
 
-
-// moment().calendar({
-//     sameDay: function (now) {
-//         if (this.isBefore(now)) {
-//             one.style.backgroundColor = "green";
-//         } else {
-//             one.style.backgroundColor = "grey";
-//         }
-//     }
-// })
-// moment().calendar({
-//     sameDay: function (now) {
-//         if (this.isBefore(now)) {
-//             ten.style.backgroundColor = "green";
-//         } else {
-//             ten.style.backgroundColor = "grey";
-//         }
-//     }
-// })
-
-
-// moment().calendar({
-//     sameDay: function (now) {
-//         if (this.isBefore(now)) {
-//             eleven.style.backgroundColor = "green";
-//         } else {
-//             eleven.style.backgroundColor = "grey";
-//         }
-//     }
-// })
 // Function to see if something has happened already or will happen later today
 // moment().calendar({
 //     sameDay: function (now) {
