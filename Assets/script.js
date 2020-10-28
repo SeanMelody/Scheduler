@@ -95,97 +95,97 @@ var nineTwoColor = document.querySelector(".nine-two-color")
 // SETTING THE COLOR OF THE DIVS BASED ON TIME
 
 if (nine.hour() === (moment().hours())) {
-    nineColor.style.backgroundColor = "red"
+    nineColor.style.backgroundColor = "#ff6961"
 } else if (nine.isBefore(now)) {
-    nineColor.style.backgroundColor = "grey"
+    nineColor.style.backgroundColor = "#d3d3d3"
 } else {
-    nineColor.style.backgroundColor = "green"
+    nineColor.style.backgroundColor = "#77dd77"
 }
 if (ten.hour() === (moment().hours())) {
-    tenColor.style.backgroundColor = "red"
+    tenColor.style.backgroundColor = "#ff6961"
 } else if (ten.isBefore(now)) {
-    tenColor.style.backgroundColor = "grey"
+    tenColor.style.backgroundColor = "#d3d3d3"
 } else {
-    tenColor.style.backgroundColor = "green"
+    tenColor.style.backgroundColor = "#77dd77"
 }
 if (eleven.hour() === (moment().hours())) {
-    elevenColor.style.backgroundColor = "red"
+    elevenColor.style.backgroundColor = "#ff6961"
 } else if (eleven.isBefore(now)) {
-    elevenColor.style.backgroundColor = "grey"
+    elevenColor.style.backgroundColor = "#d3d3d3"
 } else {
-    elevenColor.style.backgroundColor = "green"
+    elevenColor.style.backgroundColor = "#77dd77"
 }
 if (noon.hour() === (moment().hours())) {
-    noonColor.style.backgroundColor = "red"
+    noonColor.style.backgroundColor = "#ff6961"
 } else if (noon.isBefore(now)) {
-    noonColor.style.backgroundColor = "grey"
+    noonColor.style.backgroundColor = "#d3d3d3"
 } else {
-    noonColor.style.backgroundColor = "green"
+    noonColor.style.backgroundColor = "#77dd77"
 }
 if (one.hour() === (moment().hours())) {
-    oneColor.style.backgroundColor = "red"
+    oneColor.style.backgroundColor = "#ff6961"
 } else if (one.isBefore(now)) {
-    oneColor.style.backgroundColor = "grey"
+    oneColor.style.backgroundColor = "#d3d3d3"
 } else {
-    oneColor.style.backgroundColor = "green"
+    oneColor.style.backgroundColor = "#77dd77"
 }
 if (two.hour() === (moment().hours())) {
-    twoColor.style.backgroundColor = "red"
+    twoColor.style.backgroundColor = "#ff6961"
 } else if (two.isBefore(now)) {
-    twoColor.style.backgroundColor = "grey"
+    twoColor.style.backgroundColor = "#d3d3d3"
 } else {
-    twoColor.style.backgroundColor = "green"
+    twoColor.style.backgroundColor = "#77dd77"
 }
 if (three.hour() === (moment().hours())) {
-    threeColor.style.backgroundColor = "red"
+    threeColor.style.backgroundColor = "#ff6961"
 } else if (three.isBefore(now)) {
-    threeColor.style.backgroundColor = "grey"
+    threeColor.style.backgroundColor = "#d3d3d3"
 } else {
-    threeColor.style.backgroundColor = "green"
+    threeColor.style.backgroundColor = "#77dd77"
 }
 if (four.hour() === (moment().hours())) {
-    fourColor.style.backgroundColor = "red"
+    fourColor.style.backgroundColor = "#ff6961"
 } else if (four.isBefore(now)) {
-    fourColor.style.backgroundColor = "grey"
+    fourColor.style.backgroundColor = "#d3d3d3"
 } else {
-    fourColor.style.backgroundColor = "green"
+    fourColor.style.backgroundColor = "#77dd77"
 }
 if (five.hour() === (moment().hours())) {
-    fiveColor.style.backgroundColor = "red"
+    fiveColor.style.backgroundColor = "#ff6961"
 } else if (five.isBefore(now)) {
-    fiveColor.style.backgroundColor = "grey"
+    fiveColor.style.backgroundColor = "#d3d3d3"
 } else {
-    fiveColor.style.backgroundColor = "green"
+    fiveColor.style.backgroundColor = "#77dd77"
 }
 if (six.hour() === (moment().hours())) {
-    sixColor.style.backgroundColor = "red"
+    sixColor.style.backgroundColor = "#ff6961"
 } else if (six.isBefore(now)) {
-    sixColor.style.backgroundColor = "grey"
+    sixColor.style.backgroundColor = "#d3d3d3"
 } else {
-    sixColor.style.backgroundColor = "green"
+    sixColor.style.backgroundColor = "#77dd77"
 }
 if (seven.hour() === (moment().hours())) {
-    sevenColor.style.backgroundColor = "red"
+    sevenColor.style.backgroundColor = "#ff6961"
 } else if (seven.isBefore(now)) {
-    sevenColor.style.backgroundColor = "grey"
+    sevenColor.style.backgroundColor = "#d3d3d3"
 } else {
-    sevenColor.style.backgroundColor = "green"
+    sevenColor.style.backgroundColor = "#77dd77"
 }
 if (eight.hour() === (moment().hours())) {
-    eightColor.style.backgroundColor = "red"
+    eightColor.style.backgroundColor = "#ff6961"
     console.log("current hour")
 } else if (eight.isBefore(now)) {
-    eightColor.style.backgroundColor = "grey"
+    eightColor.style.backgroundColor = "#d3d3d3"
 } else {
-    eightColor.style.backgroundColor = "green"
+    eightColor.style.backgroundColor = "#77dd77"
 }
 if (nineTwo.hour() === (moment().hours())) {
-    nineTwoColor.style.backgroundColor = "red"
+    nineTwoColor.style.backgroundColor = "#ff6961"
     console.log("current hour")
 } else if (nineTwo.isBefore(now)) {
-    nineTwoColor.style.backgroundColor = "grey"
+    nineTwoColor.style.backgroundColor = "#d3d3d3"
 } else {
-    nineTwoColor.style.backgroundColor = "green"
+    nineTwoColor.style.backgroundColor = "#77dd77"
 }
 
 

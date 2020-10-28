@@ -3,7 +3,7 @@ body {
   font-size: 16px;
   line-height: 1;
 }
-
+/* 
 textarea{
   background: transparent;
   border: none;
@@ -11,7 +11,7 @@ textarea{
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
-}
+} */
 
 .jumbotron {
   text-align: center;
@@ -58,13 +58,16 @@ textarea{
 }
 
 .saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  /* border-left: 1px solid black; */
+  margin-top: 20px;
+  margin-left: 10px;
+  /* border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px; */
   background-color: #06AED5;
   color: white;
   /* I added the font size */
-  font-size: 40px;
+  font-size: 20px;
+  transition: all .3s ease-in-out;
 }
 
 .saveBtn i:hover {
@@ -72,7 +75,13 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
-footer p{
-  text-align: center;
+footer {
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 40px;
   padding-top: 20px;
+  text-align: center;
+
 }
