@@ -6,7 +6,7 @@ currentDay.textContent = "Today is: " + (moment().format('MMMM Do YYYY'));
 var sinceNine = document.querySelector("#sincenine")
 
 
-var nine = document.querySelector("#nine").style.backgroundColor = "red";
+// var nine = document.querySelector("#nine").style.backgroundColor = "red";
 
 var test = moment().format("MMMM Do YYYY");
 console.log(test);
@@ -87,20 +87,20 @@ for (let i = 0; i < hourColors.length; i++) {
 
 
 // Input text box for Nine
-var input = document.querySelector("#inputText");
-function returnKeyListener(event) {
-    if (event.keyCode == 13) {
-        // console log input when enter is pressed
-        console.log(input.value);
-        var newEvent = input.value
-        console.log(newEvent)
-        localStorage.setItem('meeting', newEvent)
-        localStorage.getItem('meeting', newEvent)
-    }
+// var input = document.querySelector("#inputText");
+// function returnKeyListener(event) {
+//     if (event.keyCode == 13) {
+//         // console log input when enter is pressed
+//         console.log(input.value);
+//         var newEvent = input.value
+//         console.log(newEvent)
+//         localStorage.setItem('meeting', newEvent)
+//         localStorage.getItem('meeting', newEvent)
+//     }
 
 
-}
-input.addEventListener('keyup', returnKeyListener)
+// }
+// input.addEventListener('keyup', returnKeyListener)
 // localStorage.setItem('meeting', newEvent)
 // localStorage.getItem('meeting', newEvent)
 
@@ -147,64 +147,39 @@ $(".save").click(function () {
 
 
 
+// for (let i = 0; i < array.length; i++) {
+//     const element = array[i];
 
-
+// }
 // var elevenInput = localStorage.getItem("eleven");
+// document.querySelector(".eleven-test").value = elevenInput
+// document.querySelector(".eleven-test").style.backgroundColor = "grey"
+
+
 // var elevenUgh = document.querySelector(".elevenUgh")
 // elevenUgh.textContent = elevenInput
 
 
 // ELEVEN SAVE BUTTON AND LOCAL STORAGE
+
+var elevenInput = localStorage.getItem("eleven");
+document.querySelector(".eleven-test").value = elevenInput
+
+
 $(".save-eleven").click(function () {
     var elevenInput = document.querySelector(".eleven-test").value
     localStorage.setItem("eleven", elevenInput);
 
-
     var elevenInput = localStorage.getItem("eleven");
-    var elevenUgh = document.querySelector(".elevenUgh")
-    elevenUgh.textContent = elevenInput
+    var elevenUgh = document.querySelector(".eleven-test")
 
+    elevenUgh.textContent = elevenInput
 
 });
 
 
-// TEST!
-
-// if (noon item ?) {
-
-// } else {
 
 
-
-$(".save-noon").click(function () {
-    var noonInput = document.querySelector(".noon-input").value
-    localStorage.setItem("noon", noonInput);
-
-
-    var noonInput = localStorage.getItem("noon");
-    var noonTest = document.querySelector(".noon-test")
-    noonTest.textContent = noonInput
-
-
-    //     });
-
-})
-
-// TEST THREE
-$(".save-three").click(function () {
-    $(".demo-three").css("background-color", "green");
-
-
-})
-// var noonInput = document.querySelector(".noon-input").value
-// localStorage.setItem("noon", noonInput);
-
-
-// var noonInput = localStorage.getItem("noon");
-// $("div.demo-three").text(noonInput)
-
-
-// OBJECT TEST
 
 // VARIABLES FOR THE COLOR CHANGING DIV CLASSES
 var nineColor = document.querySelector(".nine-color")
@@ -294,32 +269,44 @@ var hourTest = [
 var nowTest = moment().hours()
 console.log(nowTest)
 
-if (nine.isBefore(now)) {
+if (nine.hour() === (moment().hours())) {
+    nineColor.style.backgroundColor = "red"
+} else if (nine.isBefore(now)) {
     nineColor.style.backgroundColor = "grey"
 } else {
     nineColor.style.backgroundColor = "green"
 }
-if (ten.isBefore(now)) {
+if (ten.hour() === (moment().hours())) {
+    tenColor.style.backgroundColor = "red"
+} else if (ten.isBefore(now)) {
     tenColor.style.backgroundColor = "grey"
 } else {
     tenColor.style.backgroundColor = "green"
 }
-if (eleven.isBefore(now)) {
+if (eleven.hour() === (moment().hours())) {
+    elevenColor.style.backgroundColor = "red"
+} else if (eleven.isBefore(now)) {
     elevenColor.style.backgroundColor = "grey"
 } else {
     elevenColor.style.backgroundColor = "green"
 }
-if (noon.isBefore(now)) {
+if (noon.hour() === (moment().hours())) {
+    noonColor.style.backgroundColor = "red"
+} else if (noon.isBefore(now)) {
     noonColor.style.backgroundColor = "grey"
 } else {
     noonColor.style.backgroundColor = "green"
 }
-if (one.isBefore(now)) {
+if (one.hour() === (moment().hours())) {
+    oneColor.style.backgroundColor = "red"
+} else if (one.isBefore(now)) {
     oneColor.style.backgroundColor = "grey"
 } else {
     oneColor.style.backgroundColor = "green"
 }
-if (two.isBefore(now)) {
+if (two.hour() === (moment().hours())) {
+    twoColor.style.backgroundColor = "red"
+} else if (two.isBefore(now)) {
     twoColor.style.backgroundColor = "grey"
 } else {
     twoColor.style.backgroundColor = "green"
@@ -338,27 +325,39 @@ if (four.hour() === (moment().hours())) {
 } else {
     fourColor.style.backgroundColor = "green"
 }
-if (five.isBefore(now)) {
+if (five.hour() === (moment().hours())) {
+    fiveColor.style.backgroundColor = "red"
+} else if (five.isBefore(now)) {
     fiveColor.style.backgroundColor = "grey"
 } else {
     fiveColor.style.backgroundColor = "green"
 }
-if (six.isBefore(now)) {
+if (six.hour() === (moment().hours())) {
+    sixColor.style.backgroundColor = "red"
+} else if (six.isBefore(now)) {
     sixColor.style.backgroundColor = "grey"
 } else {
     sixColor.style.backgroundColor = "green"
 }
-if (seven.isBefore(now)) {
+if (seven.hour() === (moment().hours())) {
+    sevenColor.style.backgroundColor = "red"
+} else if (seven.isBefore(now)) {
     sevenColor.style.backgroundColor = "grey"
 } else {
     sevenColor.style.backgroundColor = "green"
 }
-if (eight.isBefore(now)) {
+if (eight.hour() === (moment().hours())) {
+    eightColor.style.backgroundColor = "red"
+    console.log("current hour")
+} else if (eight.isBefore(now)) {
     eightColor.style.backgroundColor = "grey"
 } else {
     eightColor.style.backgroundColor = "green"
 }
-if (nineTwo.isBefore(now)) {
+if (nineTwo.hour() === (moment().hours())) {
+    nineTwoColor.style.backgroundColor = "red"
+    console.log("current hour")
+} else if (nineTwo.isBefore(now)) {
     nineTwoColor.style.backgroundColor = "grey"
 } else {
     nineTwoColor.style.backgroundColor = "green"
