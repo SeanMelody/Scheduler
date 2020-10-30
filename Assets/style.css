@@ -1,18 +1,11 @@
+/* Full body styling */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
 }
-/* 
-textarea{
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
-} */
 
+/* Header Styling */
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -30,6 +23,7 @@ textarea{
   border-radius: 15px;
 }
 
+/* Row Styling */
 .row {
   white-space: pre-wrap;
   height: 80px;
@@ -42,11 +36,7 @@ textarea{
   border-top: 1px dashed #000000;
 }
 
-h6 {
-  font-weight: bold;
-  font-size: 18px;
-}
-
+/* Past block Styling */
 .past {
   background-color: #d3d3d3;
   padding-top: 10px;
@@ -56,6 +46,7 @@ h6 {
   
 }
 
+/* Present Block Styling */
 .present {
   background-color: #ff6961;
   padding-top: 10px;
@@ -64,6 +55,7 @@ h6 {
   border: 1px solid #000000;
 }
 
+/* Future Block Styling */
 .future {
   background-color: #77dd77;
   padding-top: 10px;
@@ -72,15 +64,12 @@ h6 {
   border: 1px solid #000000;
 }
 
+/* Save Button Styling */
 .saveBtn {
-  /* border-left: 1px solid black; */
   margin-top: 20px;
   margin-left: 10px;
-  /* border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px; */
   background-color: #06AED5;
   color: white;
-  /* I added the font size */
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
@@ -90,6 +79,13 @@ h6 {
   transition: all .3s ease-in-out;
 }
 
+/* Footer Text Styling */
+h6 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Footer Styling */
 footer {
   bottom: 0;
   width: 100%;
@@ -98,5 +94,4 @@ footer {
   margin-top: 40px;
   padding-top: 20px;
   text-align: center;
-
 }

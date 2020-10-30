@@ -1,24 +1,13 @@
 
-// Access the ID #currentDay and print the current date there
+// Access the ID #currentDay and print the current date there using Moments
 var currentDay = document.querySelector("#currentDay");
 currentDay.textContent = "Today is: " + (moment().format('MMMM Do YYYY'));
-// currentDay.textContent(moment().format('MMMM Do YYYY, h:mm:ss a'));
-var sinceNine = document.querySelector("#sincenine")
 
 
-// Setting Variable to Now
+
+
+// Setting Variable to Now using Moments
 var now = moment();
-
-var test = moment().format("MMMM Do YYYY");
-console.log(test);
-
-
-// Test 3 Starts the timer at 09:00 on the current day
-var startAtNine = moment().hours(9).minutes(0).seconds(0).milliseconds(0).fromNow();
-
-
-sinceNine.textContent = "9am was " + startAtNine
-
 
 
 // Variables for Each Hour on the Calendar
@@ -37,7 +26,7 @@ var eight = document.querySelector("#eight");
 var nineTwo = document.querySelector("#nine-two")
 
 
-// Setting Each Hour to the time of day
+// Setting Each Hour to it's time of day, using Moments
 nine = moment().hours(09).minutes(0).seconds(0).milliseconds(0);
 ten = moment().hours(10).minutes(0).seconds(0).milliseconds(0);
 eleven = moment().hours(11).minutes(0).seconds(0).milliseconds(0);
@@ -55,7 +44,7 @@ nineTwo = moment().hours(21).minutes(0).seconds(0).milliseconds(0);
 
 
 // VARIABLES FOR THE COLOR CHANGING DIV CLASSES
-// var nineColor = document.querySelector(".nine-color")
+var nineColor = document.querySelector(".nine-color")
 var tenColor = document.querySelector(".ten-color")
 var elevenColor = document.querySelector(".eleven-color")
 var noonColor = document.querySelector(".noon-color")
@@ -487,160 +476,3 @@ $(".nine-two-save").click(function () {
     nineTwoText.textContent = nineTwoInput
 
 });
-
-
-
-
-
-
-
-// FUNCTION TESTS!
-
-
-
-// // IMPORTANT HOURS LOGGED BEFORE AND AFTER NOW!!!!
-// var hourColors = [nine, ten, eleven, noon, one, two, three, four, five, six, seven, eight, nineTwo]
-// for (let i = 0; i < hourColors.length; i++) {
-//     hourColorsSelector = hourColors[i];
-//     if (hourColorsSelector.isBefore(now)) {
-//         // hourColorSelector.style.backgroundColor = "yellow";
-//         console.log("before now")
-//         // console.log(hourColors[i])
-//         // Else if Statement to pick current hour?
-//         // } else if (hourColorsSelector.isSame(now)) {
-//         //     console.log("now")
-//     } else {
-//         (hourColorsSelector.isAfter(now))
-//         // hourColorsSelector.style.backgroundColor = "green"
-//         console.log("after now")
-//     }
-// }
-
-
-// var hourTest = [
-//     {
-//         time: nine,
-//         color: nineColor,
-//     },
-//     {
-//         time: ten,
-//         color: tenColor,
-//     },
-//     {
-//         time: eleven,
-//         color: elevenColor,
-//     },
-//     {
-//         time: noon,
-//         color: noonColor,
-//     },
-//     {
-//         time: one,
-//         color: oneColor,
-//     },
-//     {
-//         time: two,
-//         color: twoColor,
-//     },
-//     {
-//         time: three,
-//         color: threeColor,
-//     },
-//     {
-//         time: ten,
-//         color: tenColor,
-//     },
-//     {
-//         time: four,
-//         color: fourColor,
-//     },
-//     {
-//         time: ten,
-//         color: tenColor,
-//     },
-//     {
-//         time: five,
-//         color: fiveColor,
-//     },
-//     {
-//         time: six,
-//         color: sixColor,
-//     },
-//     {
-//         time: seven,
-//         color: sevenColor,
-//     },
-//     {
-//         time: eight,
-//         color: eightColor,
-//     },
-//     {
-//         time: nineTwo,
-//         color: nineTwoColor,
-//     },
-// ];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// TIME CHECKS
-
-// var now = moment();
-
-
-// // Variable nowtest === right now hours as a number
-// var nowTest = moment().hours()
-// console.log(nowTest)
-
-// var beginningTime = moment('9:00', 'h:mma');
-// var endTime = moment().hours();
-// console.log(beginningTime.isBefore(endTime)); // true
-
-
-// console.log(one.isBefore(now))
-
-
-// var nowHour = moment().hours()
-// console.log(nowHour)
-
-
-
-// if (one.isBefore(now)) {
-//     // nineColor.textContent = "yellow";
-//     console.log("it is after 1pm")
-// } else {
-//     // nineColor.textContent = "blue"
-//     console.log("it is before 1pm")
-// }
-
-
-
-// FOR LOOP TO PICK COLORS?
-// for (let i = 0; i < hourColors.length; i++) {
-//     var hourColorsSelector = hourColors[i];
-
-
-
-
-// }
-
-// Function to see if something has happened already or will happen later today
-// moment().calendar({
-//     sameDay: function (now) {
-//       if (this.isBefore(now)) {
-//         return '[Will Happen Today]';
-//       } else {
-//         return '[Happened Today]';

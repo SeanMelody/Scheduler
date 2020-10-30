@@ -3,12 +3,16 @@
 
 <head>
   <meta charset="UTF-8" />
+  <!-- Meta Tag for size of Page -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- Bootstrap Link -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <!-- Google Font Link -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <!-- My CSS Link -->
   <link rel="stylesheet" href="./assets/style.css" />
   <!-- Favicon Link -->
   <link rel="icon" type="image/png" href="./assets/Favicon.png" />
@@ -16,15 +20,13 @@
 </head>
 
 <body>
+  <!-- Header Info -->
   <header class="jumbotron">
     <h1 class="display-3">Work Day Scheduler</h1>
-    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p class="lead">A simple calendar app for scheduling your work day.
     <p id="currentDay" class="lead"></p>
-    <!-- I ADDED THIS TO SHOW HOW LONG IT HAS BEEN SINCE 9AM -->
-    <p id="sincenine"></p>
 
-    <h6 class="description">Color Meanings:</h6>
-
+    <!-- Different Color Block Meanings Key -->
     <div class="row">
       <p class="past col-md-4">grey time block for an hour before the current time</p>
       <p class="present col-md-4">red time block for the current time</p>
@@ -32,109 +34,160 @@
     </div>
   </header>
 
-  <!-- Timeblocks go here -->
+  <!-- Time block for 9 am -->
   <div class="container hours">
     <div class="row">
+      <!-- Left Side of Row to show the hour -->
       <div class="col-md-1 border border-dark border-left-0">9am</div>
+      <!-- Text are for the Main part of the hour block, also able to accept text from User -->
       <textarea class="col-md-10 border border-dark nine-color nine-text" id="nine">
 
       </textarea>
+      <!-- Right Side of the Row to hold save button for text input, Each hour is Saved to Local Storage Independently -->
       <div class="col-md-1 bg-info border-dark rounded-right"><button class="nine-save saveBtn fa fa-save"></button>
       </div>
     </div>
+    <!-- Time block for 10 am -->
     <div class="row">
+      <!-- Left Side of Row to show the hour -->
       <div class="col-md-1 border border-dark border-left-0">10am</div>
+      <!-- Text are for the Main part of the hour block, also able to accept text from User -->
       <textarea class="col-md-10 border border-dark ten-color ten-text" id="ten">
 
       </textarea>
+      <!-- Right Side of the Row to hold save button for text input, Each hour is Saved to Local Storage Independently -->
       <div class="col-md-1 bg-info border-dark rounded-right"><button class="ten-save saveBtn fa fa-save"></button>
       </div>
     </div>
+    <!-- Time block for 11 am -->
     <div class="row">
+      <!-- Left Side of Row to show the hour -->
       <div class="col-md-1 border border-dark border-left-0">11am</div>
+      <!-- Text are for the Main part of the hour block, also able to accept text from User -->
       <textarea class="col-md-10 border border-dark eleven-color eleven-text" id="eleven">
 
       </textarea>
+      <!-- Right Side of the Row to hold save button for text input, Each hour is Saved to Local Storage Independently -->
       <div class="col-md-1 bg-info border-dark rounded-right"><button class="eleven-save saveBtn fa fa-save"></button>
       </div>
     </div>
+    <!-- Time block for noon -->
     <div class="row">
+      <!-- Left Side of Row to show the hour -->
       <div class="col-md-1 border border-dark border-left-0">Noon</div>
+      <!-- Text are for the Main part of the hour block, also able to accept text from User -->
       <textarea class="col-md-10 border border-dark noon-color noon-text" id="noon">
 
       </textarea>
+      <!-- Right Side of the Row to hold save button for text input, Each hour is Saved to Local Storage Independently -->
       <div class="col-md-1 bg-info border-dark rounded-right"><button class="noon-save saveBtn fa fa-save"></button>
       </div>
     </div>
+    <!-- Time block for 1 pm -->
     <div class="row">
+      <!-- Left Side of Row to show the hour -->
       <div class="col-md-1 border border-dark border-left-0">1pm</div>
+      <!-- Text are for the Main part of the hour block, also able to accept text from User -->
       <textarea class="col-md-10 border border-dark one-color one-text" id="one">
 
       </textarea>
+      <!-- Right Side of the Row to hold save button for text input, Each hour is Saved to Local Storage Independently -->
       <div class="col-md-1 bg-info border-dark rounded-right"><button class="one-save saveBtn fa fa-save"></button>
       </div>
     </div>
+    <!-- Time block for 2 pm -->
     <div class="row">
+      <!-- Left Side of Row to show the hour -->
       <div class="col-md-1 border border-dark border-left-0">2pm</div>
+      <!-- Text are for the Main part of the hour block, also able to accept text from User -->
       <textarea class="col-md-10 border border-dark two-color two-text" id="two">
 
       </textarea>
+      <!-- Right Side of the Row to hold save button for text input, Each hour is Saved to Local Storage Independently -->
       <div class="col-md-1 bg-info border-dark rounded-right"><button class="two-save saveBtn fa fa-save"></button>
       </div>
     </div>
+    <!-- Time block for 3 pm -->
     <div class="row">
+      <!-- Left Side of Row to show the hour -->
       <div class="col-md-1 border border-dark border-left-0">3pm</div>
+      <!-- Text are for the Main part of the hour block, also able to accept text from User -->
       <textarea class="col-md-10 border border-dark three-color three-text" id="three">
 
       </textarea>
+      <!-- Right Side of the Row to hold save button for text input, Each hour is Saved to Local Storage Independently -->
       <div class="col-md-1 bg-info border-dark rounded-right"><button class="three-save saveBtn fa fa-save"></button>
       </div>
     </div>
+    <!-- Time block for 4 pm -->
     <div class="row">
+      <!-- Left Side of Row to show the hour -->
       <div class="col-md-1 border border-dark border-left-0">4pm</div>
+      <!-- Text are for the Main part of the hour block, also able to accept text from User -->
       <textarea class="col-md-10 border border-dark four-color four-text" id="four">
 
       </textarea>
+      <!-- Right Side of the Row to hold save button for text input, Each hour is Saved to Local Storage Independently -->
       <div class="col-md-1 bg-info border-dark rounded-right"><button class="four-save saveBtn fa fa-save"></button>
       </div>
     </div>
+    <!-- Time block for 5 pm -->
     <div class="row">
+      <!-- Left Side of Row to show the hour -->
       <div class="col-md-1 border border-dark border-left-0">5pm</div>
+      <!-- Text are for the Main part of the hour block, also able to accept text from User -->
       <textarea class="col-md-10 border border-dark five-color five-text" id="five">
 
       </textarea>
+      <!-- Right Side of the Row to hold save button for text input, Each hour is Saved to Local Storage Independently -->
       <div class="col-md-1 bg-info border-dark rounded-right"><button class="five-save saveBtn fa fa-save"></button>
       </div>
     </div>
+    <!-- Time block for 6 pm -->
     <div class="row">
+      <!-- Left Side of Row to show the hour -->
       <div class="col-md-1 border border-dark border-left-0">6pm</div>
+      <!-- Text are for the Main part of the hour block, also able to accept text from User -->
       <textarea class="col-md-10 border border-dark six-color six-text" id="six">
 
       </textarea>
+      <!-- Right Side of the Row to hold save button for text input, Each hour is Saved to Local Storage Independently -->
       <div class="col-md-1 bg-info border-dark rounded-right"><button class="six-save saveBtn fa fa-save"></button>
       </div>
     </div>
+    <!-- Time block for 7 pm -->
     <div class="row">
+      <!-- Left Side of Row to show the hour -->
       <div class="col-md-1 border border-dark border-left-0">7pm</div>
+      <!-- Text are for the Main part of the hour block, also able to accept text from User -->
       <textarea class="col-md-10 border border-dark seven-color seven-text" id="seven">
 
       </textarea>
+      <!-- Right Side of the Row to hold save button for text input, Each hour is Saved to Local Storage Independently -->
       <div class="col-md-1 bg-info border-dark rounded-right"><button class="seven-save saveBtn fa fa-save"></button>
       </div>
     </div>
+    <!-- Time block for 8 pm -->
     <div class="row">
+      <!-- Left Side of Row to show the hour -->
       <div class="col-md-1 border border-dark border-left-0">8pm</div>
+      <!-- Text are for the Main part of the hour block, also able to accept text from User -->
       <textarea class="col-md-10 border border-dark eight-color eight-text" id="eight">
 
       </textarea>
+      <!-- Right Side of the Row to hold save button for text input, Each hour is Saved to Local Storage Independently -->
       <div class="col-md-1 bg-info border-dark rounded-right"><button class="eight-save saveBtn fa fa-save"></button>
       </div>
     </div>
+    <!-- Time block for 9 pm -->
     <div class="row">
+      <!-- Left Side of Row to show the hour -->
       <div class="col-md-1 border border-dark border-left-0">9pm</div>
+      <!-- Text are for the Main part of the hour block, also able to accept text from User -->
       <textarea class="col-md-10 border border-dark nine-two-color nine-two-text" id="nine-two">
 
       </textarea>
+      <!-- Right Side of the Row to hold save button for text input, Each hour is Saved to Local Storage Independently -->
       <div class="col-md-1 bg-info border-dark rounded-right"><button class="nine-two-save saveBtn fa fa-save"></button>
       </div>
     </div>
@@ -142,18 +195,16 @@
 
 
   </div>
-
+  <!-- Footer! Copyright and Love -->
   <footer class="footer">
     <h6>&#169 and &#9829 Sean Melody 2020</h6>
   </footer>
-
+  <!-- jQuery Script Tags -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <!-- Test to make sure that moment.js is connected -->
-  <!-- <script>
-    console.log(moment());
-  </script> -->
+  <!-- Script for Moments -->
   <script src="./assets/moment/moment.min.js"></script>
+  <!-- My JavaScript -->
   <script src="./assets/script.js"></script>
 </body>
 
