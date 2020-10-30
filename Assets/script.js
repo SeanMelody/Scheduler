@@ -153,7 +153,7 @@ if (four.hour() === (moment().hours())) {
     $(".four-color").css("background-color", "#ff6961");
 } else if (four.isBefore(now)) {
     // if current time is AFTER 4pm: color is Bootstrap Secondary
-    f$(".four-color").css("background-color", "#d3d3d3");
+    $(".four-color").css("background-color", "#d3d3d3");
 } else {
     // if current time is BEFORE 4pm: color is Bootstrap Success
     $(".four-color").css("background-color", "#77dd77");
