@@ -21,5 +21,5 @@ Enjoy!
 
 ![Scheduler 1](https://user-images.githubusercontent.com/68625400/97654637-9a018a80-1a20-11eb-9669-62b9031abf2f.png)
 ![Scheduler 2](https://user-images.githubusercontent.com/68625400/97654639-9bcb4e00-1a20-11eb-922e-62190804fd8f.png)
-![Scheduler 3](https://user-images.githubusercontent.com/68625400/97654641-9d951180-1a20-11eb-9727-7bc7e1789c22.png)
+![Scheduler 3](https://user-images.githubusercontent.com/68625400/97655247-e00b1e00-1a21-11eb-86f8-cd30fb3837bf.png)
 
