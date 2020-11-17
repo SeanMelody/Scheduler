@@ -1,3 +1,4 @@
+<img src="https://img.shields.io/badge/LICENSE-mit-green"/>
 # Scheduler
 A work day scheduler with color coded time blocks
 
